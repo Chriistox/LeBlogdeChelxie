@@ -16,19 +16,20 @@
       while ($obj = $req->fetch()){
 
         $client = new Client();
-        $client->setPrenom();
-        $client->setNom();
+        $client->setPrenom($obj->prenom);
+        $client->setNom($obj->nom);
+
+        $statut =new Statut();
+        $statut->setLibelle($obj->libelle);
 
         $commande = new Commande();
         $commande->setId($obj->id);
-        $commande->setReference($obj->reference);
-        $commande->setNom($client);
-        $commande->setPrenom($client);
-        $commande->setDateCommande($obj->date_cmd);
+        $commande->setReference($obj->ref);
+        $commande->setClient($client);
+        $commande->setStatut($statut);
+        $commande->setDateCmd($obj->date_cmd);
         $commande->setDateExpedition($obj->date_expedition);
 
-        $statut =new statut();
-        $commande->setStatut($obj->libelle);
 
         $listCommande[] = $commande;
 

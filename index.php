@@ -51,6 +51,13 @@ switch ($action) {
 		$vueAAfficher = "views/login.php";
 		break;
 
+	case "listCommande":
+	//On prépare la vue a afficher avec les données dont elle a besoin
+	$commandeRepo = new CommandeRepository();
+	$listCommande = $commandeRepo->getAll($pdo);
+	$vueAAfficher = "views/listCommande.php";
+	break;
+
 	case "listClient":
 		//On prépare la vue a afficher avec les données dont elle a besoin
 		$clientRepo = new ClientRepository();
@@ -135,13 +142,6 @@ switch ($action) {
 			$vueAAfficher = "views/listClient.php";
 			break;
 		}
-
-		case "listCommande":
-		//On prépare la vue a afficher avec les données dont elle a besoin
-		$clientRepo = new ClientRepository();
-		$listCommande = $clientRepo->getAll($pdo);
-		$vueAAfficher = "views/listCommande.php";
-		break;
 }
 
 include_once("layouts/layout.php");

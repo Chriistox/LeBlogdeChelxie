@@ -28,11 +28,11 @@ class commande
 	}
 
 	public function getDateExpedition() {
-		return $this->	$DateExpedition;
+		return $this->DateExpedition;
 	}
 
 	public function setDateExpedition($DateExpedition) {
-		$this->DateExpedition* = $DateExpedition;
+		$this->DateExpedition = $DateExpedition;
 	}
 
 	public function getDateCmd() {
