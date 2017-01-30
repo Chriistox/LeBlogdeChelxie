@@ -1,4 +1,5 @@
-<a href="./index.php?action=formAddClient">Ajouter</a>
+<a href="./index.php?action=formAddCommande">Ajouter</a>
+
 <table>
   <thead>
     <th>Id</th>
@@ -18,10 +19,10 @@
       echo '<td>' . $commande->getRef() . '</td>';
       echo '<td>' . $commande->getDateExpedition() . '</td>';
       echo '<td>' . $commande->getDateCmd() . '</td>';
+
       echo '<td>' . $commande->getClientId() . '</td>';
       echo '<td>' . $commande->getStatutId() . '</td>';
-      echo '<td>' . $commande->getCp() . '</td>';
-      echo '<td>' . $commande->getVille() . '</td>';
+
       echo '<td><a href="./index.php?action=formEditClient&id=' . $client->getId() . '"">Editer</a></td>';
       echo '<td><a href="./index.php?action=deleteClient&id=' . $client->getId() . '">Supprimer</a></td>';
       echo '</tr>';  
