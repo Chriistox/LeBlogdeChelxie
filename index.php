@@ -2,6 +2,8 @@
 //Contrôleur principal de notre application
 session_start();
 include_once('library/PDOFactory.php');
+include_once('models/entities/commande.php');
+include_once('models/entities/Statut.php');
 include_once('models/entities/Personne.php');
 include_once('models/entities/Client.php');
 include_once('models/entities/User.php');
