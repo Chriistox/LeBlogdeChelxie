@@ -1,4 +1,4 @@
-a href="./index.php?action=formAddClient">Ajouter</a>
+<a href="./index.php?action=formAddCommande">Ajouter</a>
 <table>
   <thead>
     <th>Id</th>
@@ -12,7 +12,7 @@ a href="./index.php?action=formAddClient">Ajouter</a>
   </thead>
   <tbody>
     <?php
-    foreach ($listeCommande as $commande) {
+    foreach ($listCommande as $commande) {
       echo '<tr>';
       echo '<td>' . $commande->getId() . '</td>';
       echo '<td>' . $commande->getRef() . '</td>';
