@@ -1,14 +1,15 @@
 
-{<?php
+<?php
 
-class User 
+class commande
 {
 
 	private $id;
-	private $nom;
-	private $prenom;
-	private $login;
-	private $password;
+	private $Reference;
+	private $DateExpedition;
+	private $DateCmd;
+	private $Client;
+	private $Statut;
 
 	public function getId() {
 		return $this->id;
@@ -19,39 +20,43 @@ class User
 	}
 
 	public function getReference() {
-		return $this->nom;
+		return $this->Reference;
 	}
 
-	public function setReference($nom) {
-		$this->nom = $nom;
+	public function setReference($Reference) {
+		$this->Reference = $Reference;
 	}
 
 	public function getDateExpedition() {
-		return $this->prenom;
+		return $this->	$DateExpedition;
 	}
 
-	public function setDateExpedition($prenom) {
-		$this->prenom = $prenom;
+	public function setDateExpedition($DateExpedition) {
+		$this->DateExpedition* = $DateExpedition;
 	}
 
 	public function getDateCmd() {
-		return $this->login;
+		return $this->DateCmd;
 	}
 
-	public function setDateCmd($login) {
-		$this->login = $login;
+	public function setDateCmd($DateCmd) {
+		$this->DateCmd = $DateCmd;
 	}
 
 	public function getClient() {
-		return $this->password;
+		return $this->Client;
 	}
 
-	public function setClient($password) {
-		$this->password = $password;
+	public function setClient($Client) {
+		$this->Client = $Client;
 	}
 
+	public function getStatut() {
+		return $this->Statut;
+	}
 
-
-
+	public function setStatut($Statut) {
+		$this->Statut = $Statut;
+	}
 
 }
