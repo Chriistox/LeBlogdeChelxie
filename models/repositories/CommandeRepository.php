@@ -19,16 +19,18 @@
         $client->setPrenom();
         $client->setNom();
 
+        $statut =new statut();
+        $commande->setStatut($obj->libelle);
+
         $commande = new Commande();
         $commande->setId($obj->id);
-        $commande->setReference($obj->reference);
+        $commande->setReference($obj->ref);
         $commande->setNom($client);
         $commande->setPrenom($client);
         $commande->setDateCommande($obj->date_cmd);
         $commande->setDateExpedition($obj->date_expedition);
 
-        $statut =new statut();
-        $commande->setStatut($obj->libelle);
+       
 
         $listCommande[] = $commande;
 

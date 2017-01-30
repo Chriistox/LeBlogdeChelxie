@@ -32,7 +32,7 @@ class commande
 	}
 
 	public function setDateExpedition($DateExpedition) {
-		$this->DateExpedition* = $DateExpedition;
+		$this->DateExpedition = $DateExpedition;
 	}
 
 	public function getDateCmd() {
