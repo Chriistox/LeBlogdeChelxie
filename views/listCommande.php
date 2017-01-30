@@ -16,7 +16,7 @@
     foreach ($listCommande as $commande) {
       echo '<tr>';
       echo '<td>' . $commande->getId() . '</td>';
-      echo '<td>' . $commande->getRef() . '</td>';
+      echo '<td>' . $commande->getReference() . '</td>';
       echo '<td>' . $commande->getDateExpedition() . '</td>';
       echo '<td>' . $commande->getDateCmd() . '</td>';
 
