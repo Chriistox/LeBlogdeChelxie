@@ -1,4 +1,4 @@
-<? php
+<?php
 
 class Statut 
 {
@@ -22,3 +22,5 @@ class Statut
 		$this->libelle = $libelle;
 	}
 }
+
+?>
